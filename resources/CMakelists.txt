@@ -1,0 +1,20 @@
+# CMakeLists.txt in the resources folder
+
+# Copy audio resources
+file(GLOB AUDIO_RESOURCES
+    "*.ogg"
+    "*.wav"
+)
+
+foreach(audio_file ${AUDIO_RESOURCES})
+    configure_file(${audio_file} ${CMAKE_BINARY_DIR}/audio/ COPYONLY)
+endforeach()
+
+# Copy sprite resources
+file(GLOB SPRITE_RESOURCES
+    "*.png"
+)
+
+foreach(sprite_file ${SPRITE_RESOURCES})
+    configure_file(${sprite_file} ${CMAKE_BINARY_DIR}/sprites/ COPYONLY)
+endforeach()
