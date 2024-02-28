@@ -679,3 +679,6 @@ FodyWeavers.xsd
 
 # End of https://www.toptal.com/developers/gitignore/api/c,c++,cmake,vs,pvs,visualstudio,visualstudiocode
 CMakePresets.json
+
+build 
+out
