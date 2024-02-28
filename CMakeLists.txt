@@ -17,3 +17,5 @@ add_library(app_dependencies INTERFACE)
 target_link_libraries(app_dependencies INTERFACE sfml-audio sfml-graphics sfml-window sfml-system)
 
 add_subdirectory(src)
+add_subdirectory(module)
+add_subdirectory(resources)
